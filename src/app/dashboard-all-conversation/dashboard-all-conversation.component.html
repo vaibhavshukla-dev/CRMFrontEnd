@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="head">
+    Appointments by Departments
+  </div>
+  <div class="body d-flex justify-content-center">
+    <ngx-charts-gauge [view]="view" [scheme]="colorScheme" [results]="single" [legend]="legend"
+      [legendPosition]="legendPosition" (select)="onSelect($event)">
+    </ngx-charts-gauge>
+  </div>
+  <div class="foot">
+
+  </div>
+</div>
