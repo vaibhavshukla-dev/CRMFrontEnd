@@ -1,9 +1,13 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UtilityService {
+
+  
+  fileUploaded : BehaviorSubject<any>= new BehaviorSubject<any>(null);
 
   constructor() { }
 
